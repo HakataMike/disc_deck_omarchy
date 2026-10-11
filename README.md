@@ -42,6 +42,12 @@ omarchy plugin disable hakatamike.disc-deck
 omarchy plugin enable hakatamike.disc-deck --section right
 ```
 
+To uninstall:
+
+```bash
+omarchy plugin remove hakatamike.disc-deck
+```
+
 ## How it works
 
 QML renders the bar widget and native popup. A Python helper reads the optical drive and CD table of contents; mpv provides audio playback through a local IPC socket. udisksctl handles data-disc mounting and unmounting.
@@ -64,3 +70,7 @@ Drive detection was verified with a Pioneer BDR-UD03. Popup opening, Escape dism
 ## Source
 
 `manifest.json` is the repository entry point; `plugin/` contains the QML interface, artwork, and Python backend. Local desktop captures, logs, and configuration backups are excluded from this repository.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
