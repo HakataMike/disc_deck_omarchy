@@ -13,6 +13,6 @@ __pycache__/
 
 # Desktop captures and design experiments are local; publish the approved marketing image.
 /*.png
+!/preview.png
 /design-preview.svg
 /marketing/*
-!/marketing/disc-deck-ethereal-3d-title-only.png

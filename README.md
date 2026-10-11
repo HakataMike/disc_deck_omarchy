@@ -1,6 +1,6 @@
 # Disc Deck
 
-![Disc Deck](marketing/disc-deck-ethereal-3d-title-only.png)
+![Disc Deck](preview.png)
 
 A native Omarchy bar plugin for audio CDs and optical drives. Open a player from the bar, browse tracks, control playback, and eject your disc.
 
