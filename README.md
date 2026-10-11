@@ -4,7 +4,7 @@
 
 A native Omarchy bar plugin for audio CDs and optical drives. Open a player from the bar, browse tracks, control playback, and eject your disc.
 
-The interface follows your Omarchy theme and features an iridescent disc that rotates during playback. The image above is a 3D marketing visualization of the player with sample track data.
+The interface follows your Omarchy theme.
 
 ## Install
 
