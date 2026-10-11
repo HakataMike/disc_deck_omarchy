@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.log
+
+# Local development copies, desktop configuration backups, and machine-specific checks.
+/backups/
+/preview/
+/check_animation.py
+/check_desktop.py
+/*-check.json
+/validation.json
+
+# Desktop captures and design experiments are local; publish the approved marketing image.
+/*.png
+/design-preview.svg
+/marketing/*
+!/marketing/disc-deck-ethereal-3d-title-only.png

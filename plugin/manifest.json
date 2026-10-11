@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "hakatamike.disc-deck",
+  "name": "Disc Deck",
+  "version": "1.0.0",
+  "author": "hakatamike",
+  "description": "An iridescent CD player with native optical-drive controls",
+  "kinds": ["bar-widget"],
+  "entryPoints": {"barWidget": "Panel.qml"},
+  "barWidget": {
+    "displayName": "Disc Deck",
+    "description": "Audio CDs, tracks, transport controls, and data discs",
+    "category": "Media",
+    "allowMultiple": false
+  }
+}
