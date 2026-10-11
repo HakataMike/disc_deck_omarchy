@@ -56,14 +56,19 @@ Tracks use generic labels such as “Track 01” and show durations read from th
 
 The helper and player run as the desktop user. One backend owns playback across bar instances and exits with the shell. Runtime state and the mpv log live in `$XDG_RUNTIME_DIR/omarchy-disc-deck/`.
 
+Disc labels, drive names, track titles, and errors render as plain text. HTML-like metadata is displayed literally and cannot load inline images.
+
 ## Validation
 
 ```bash
 python3 check_backend.py
+python3 check_text_rendering.py
 omarchy plugin validate .
 ```
 
 The backend checks require ffmpeg and mpv. They cover track timing, mixed audio/data tracks, mount paths containing spaces, optical-only operations, and real mpv IPC with silent synthetic media. Play/pause, seeking, track changes, volume limits, and cleanup passed.
+
+Text rendering checks require Qt 6's `qmltestrunner` and QtTest QML module. They exercise the production text items offscreen with normal, Unicode, and HTML-image payloads. A loopback-only HTTP server verifies that metadata triggers no image requests; an automatic-format positive control confirms that the check can detect a request.
 
 Drive detection was verified with a Pioneer BDR-UD03. Popup opening, Escape dismissal, and toggle dismissal were verified in the installed Omarchy shell. Physical audio-CD playback and data-disc mounting/ejection still need testing with inserted media.
 

@@ -248,6 +248,7 @@ Panel {
                             y: Style.space(25)
                             width: parent.width
                             text: root.state.model || "Optical drive"
+                            textFormat: Text.PlainText
                             elide: Text.ElideRight
                             color: root.muted
                             font.family: Style.font.family
@@ -302,6 +303,7 @@ Panel {
                             Text {
                                 width: parent.width
                                 text: root.state.title || "Insert a disc"
+                                textFormat: Text.PlainText
                                 wrapMode: Text.Wrap
                                 maximumLineCount: 2
                                 elide: Text.ElideRight
@@ -338,6 +340,7 @@ Panel {
                             Text {
                                 visible: root.audio
                                 text: root.track ? root.track.title : ""
+                                textFormat: Text.PlainText
                                 color: root.fg
                                 font.family: Style.font.family
                                 font.pixelSize: Style.font.heading
@@ -529,6 +532,7 @@ Panel {
                                 width: parent.width - Style.space(120)
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: row.modelData.title + (row.modelData.audio ? "" : " · Data")
+                                textFormat: Text.PlainText
                                 elide: Text.ElideRight
                                 color: row.selected ? Color.accent : root.fg
                                 font.family: Style.font.family
